@@ -477,7 +477,6 @@ body {
   padding: 8px 16px;
   display: flex;
   font-size: 14px;
-  flex-shrink: 0;
   background: var(--primary-text-navyblue);
   border-radius: 4px;
   border: 1px solid var(--primary-background-white);
@@ -488,7 +487,7 @@ body {
 
 .footer-subscribe-input:hover,
 .footer-subscribe-input:focus {
-  border: var(--tertiary-icon-green);
+  border: 1px solid var(--primary-logo-iris);
 }
 
 .footer-form-button {
@@ -514,7 +513,7 @@ body {
 
 .footer-form-button:hover,
 .footer-form-button:focus {
-  background-color: var(--tertiary-icon-green);
+  background-color: var(--secondary-button-ocean);
 }
 
 .footer-form-svgsubscribe {
@@ -709,7 +708,8 @@ body {
   border-radius: 50%;
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
